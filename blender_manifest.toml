@@ -9,7 +9,7 @@ maintainer = "Jay Friesen <jaymfriesen@outlook.com>"
 type = "add-on"
 
 # Optional link to documentation, support, source files, etc
-# website = "https://github.com/stoatsnhoney/limit-texture-size-menu-blender-addon"
+website = "https://github.com/stoatsnhoney/limit-texture-size-menu-blender-addon"
 
 # Optional list defined by Blender and server, see:
 # https://docs.blender.org/manual/en/dev/advanced/extensions/tags.html
