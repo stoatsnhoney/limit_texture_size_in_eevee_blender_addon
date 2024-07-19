@@ -23,7 +23,7 @@ bl_info = {
     "blender": (4, 2, 0),
     "location": "View3D > Textures",
     "description": "Adds a menu in the 3D view header to limit the viewport texture size.",
-    "category": "3D View",
+    "category": "Render",
 }
 
 import bpy
@@ -54,7 +54,6 @@ class OBJECT_OT_limit_texture_size(bpy.types.Operator):
     )
 
     def execute(self, context):
-        # Set the texture size limit
         context.preferences.system.gl_texture_limit = self.size
         self.report({'INFO'}, f"Texture size limited to {self.size.replace('CLAMP_', '')} px" if self.size != 'CLAMP_OFF' else "Texture size limit turned off")
         return {'FINISHED'}
@@ -81,7 +80,6 @@ def register():
     bpy.utils.register_class(OBJECT_OT_limit_texture_size)
     bpy.utils.register_class(VIEW3D_MT_limit_menu)
 
-    # Add the custom menu to the main header
     bpy.types.VIEW3D_MT_editor_menus.append(draw_item)
 
 

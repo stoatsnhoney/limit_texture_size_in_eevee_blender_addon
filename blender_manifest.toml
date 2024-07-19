@@ -5,27 +5,17 @@ version = "1.0.0"
 name = "Limit Texture Size Menu"
 tagline = "Adds a menu in the 3D view header to limit texture size"
 maintainer = "Jay Friesen <jaymfriesen@outlook.com>"
-# Supported types: "add-on", "theme"
 type = "add-on"
 
-# Optional link to documentation, support, source files, etc
 website = "https://github.com/stoatsnhoney/limit-texture-size-menu-blender-addon"
 
-# Optional list defined by Blender and server, see:
-# https://docs.blender.org/manual/en/dev/advanced/extensions/tags.html
-tags = ["3D View"]
+tags = ["Render"]
 
 blender_version_min = "4.2.0"
-# # Optional: Blender version that the extension does not support, earlier versions are supported.
-# # This can be omitted and defined later on the extensions platform if an issue is found.
-# blender_version_max = "5.1.0"
 
-# License conforming to https://spdx.org/licenses/ (use "SPDX: prefix)
-# https://docs.blender.org/manual/en/dev/advanced/extensions/licenses.html
 license = [
   "SPDX:GPL-3.0-or-later",
 ]
-# Optional: required by some licenses.
-# copyright = [
-#   "2024 Jay Friesen",
-# ]
+copyright = [
+   "2024 Jay Friesen",
+]
