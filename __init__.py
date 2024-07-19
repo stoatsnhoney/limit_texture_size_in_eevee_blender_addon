@@ -16,16 +16,6 @@
 #
 # END GPL LICENSE BLOCK #####
 
-bl_info = {
-    "name": "Limit Texture Size Menu",
-    "author": "Jay Friesen",
-    "version": (1, 0),
-    "blender": (4, 2, 0),
-    "location": "View3D > Textures",
-    "description": "Adds a menu in the 3D view header to limit the viewport texture size.",
-    "category": "Render",
-}
-
 import bpy
 
 
