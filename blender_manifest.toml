@@ -1,13 +1,15 @@
 schema_version = "1.0.0"
 
-
-id = "macos"
-version = "1.0.0"
-name = "MacOS"
-tagline = "The MacOS interface style in Blender"
+id = "limit_texture_size_menu"
+version = "1.0.1"
+name = "Limit Texture Size Menu"
+tagline = "Adds a menu in the 3D view header to limit texture size"
 maintainer = "Jay Friesen <jaymfriesen@outlook.com>"
+type = "add-on"
 
-type = "theme"
+website = "https://github.com/stoatsnhoney/limit-texture-size-menu-blender-addon"
+
+tags = ["Render"]
 
 blender_version_min = "4.2.0"
 
