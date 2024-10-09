@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 id = "limit_texture_size_menu"
-version = "1.1"
+version = "1.1.0"
 name = "Limit Texture Size Menu"
 tagline = "Limit texture sizes in Eevee"
 maintainer = "Jay Friesen <jaymfriesen@outlook.com>"
