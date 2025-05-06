@@ -48,9 +48,6 @@ class OBJECT_OT_limit_texture_size(bpy.types.Operator):
         self.report({'INFO'}, f"Texture size limited to {self.size.replace('CLAMP_', '')} px" if self.size != 'CLAMP_OFF' else "Texture size limit turned off")
         return {'FINISHED'}
 
-    def invoke(self, context, event):
-        return context.window_manager.invoke_props_dialog(self)
-
 
 class VIEW3D_MT_limit_menu(bpy.types.Menu):
     bl_label = "Textures"
@@ -58,7 +55,9 @@ class VIEW3D_MT_limit_menu(bpy.types.Menu):
 
     def draw(self, context):
         layout = self.layout
-        layout.operator(OBJECT_OT_limit_texture_size.bl_idname)
+        for size, label, _ in OBJECT_OT_limit_texture_size.sizes:
+            props = layout.operator(OBJECT_OT_limit_texture_size.bl_idname, text=label)
+            props.size = size
 
 
 def draw_item(self, context):
