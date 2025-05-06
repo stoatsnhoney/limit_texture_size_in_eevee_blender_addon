@@ -1,13 +1,13 @@
 schema_version = "1.0.0"
 
 id = "limit_texture_size_menu"
-version = "1.1.0"
+version = "1.0.2"
 name = "Limit Texture Size Menu"
-tagline = "Limit texture sizes in Eevee Simplify panel"
+tagline = "Adds a menu in the 3D view header to limit texture size"
 maintainer = "Jay Friesen <jaymfriesen@outlook.com>"
 type = "add-on"
 
-website = "https://github.com/stoatsnhoney/limit_texture_size_in_eevee_blender_addon"
+website = "https://github.com/stoatsnhoney/limit-texture-size-menu-blender-addon"
 
 tags = ["Render"]
 
